@@ -55,7 +55,11 @@ export default class ChaosOrganizer {
       console.log(data);
     });
 
-    this.login();
+    const data = {
+      name: 'demo',
+      password: 'demo',
+    };
+    this.login(data);
   }
 
   login(data = {}) {
